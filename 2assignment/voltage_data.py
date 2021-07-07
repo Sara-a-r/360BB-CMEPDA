@@ -16,7 +16,7 @@ class VoltageData:
         self._data = numpy.column_stack([t, v]) #private attribute
         self.spline = interpolate.InterpolatedUnivariateSpline(self.timestamps,
                                                                self.voltages,
-                                                               k=3)
+                                                               k=3) #spline cubic
 #define attribute times and voltages
     @property  #decoratore
     def timestamps(self):
