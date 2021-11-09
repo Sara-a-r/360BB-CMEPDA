@@ -40,7 +40,7 @@ def print_freq(freq_dict):
     """ Print data and ascii istogram.
     """
     for ch, freq in freq_dict.items():
-        if freq*100. < 10:                      # Se la percentuale è minore di 10 serve uno spazio in più
+        if freq*100. < 10:                      # Se la percentuale è minore di 10 serve uno spazio in più.
             #   lettera: perc                   esempio: 5% = #####, la funzione ceil arrotonda.
             print(f'{ch}: {freq:.3%} ', '#'*math.ceil( freq*100. - 0.5 ))
         else:
