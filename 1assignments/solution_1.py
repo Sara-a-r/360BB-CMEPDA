@@ -54,3 +54,4 @@ if __name__ == '__main__':
     parser.add_argument('infile', help='path to the input file')
     args = parser.parse_args()
     process(args.infile)
+#comm
